@@ -2,11 +2,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Biblioteca {
+    //Atributos da classe 
     private String nome;
     private List<Livro> livros;
     private Leitor leitor;
     private List<Leitor> leitores;
 
+    //Construtor da classe (exige nome como parametro)
     public Biblioteca(String nome) {
         this.nome = nome;
         this.leitores = new ArrayList<>();
@@ -31,6 +33,7 @@ public class Biblioteca {
         }
     }
 
+    //Verifica se existem livros nessa biblioteca e os exibe caso existam
     public void exibirLivro() {
         if (livros != null) {
             for (Livro livro: livros){
@@ -41,6 +44,7 @@ public class Biblioteca {
         }
     }
 
+    //Verifica se existem leitores nessa biblioteca e os exibe caso existam
     public void eexibirLeitor() {
         if (leitores != null) {
             for (Leitor leitor: leitores){
